@@ -77,8 +77,8 @@ meie_fun:
 	.iter_end:
 	ADD	DWORD[EBP-4],	1	; i++
 
-	PUSH	DWORD[EBP-4]
 	PUSH	DWORD[EBP+12]
+	PUSH	DWORD[EBP-4]
 	jmpcnd	JLE,	.loop
 
 	ADD	ESP,	8

@@ -19,8 +19,8 @@
 %endmacro
 
 %macro jmpcnd 2
-	POP	EBX
 	POP	EAX
+	POP	EBX
 	CMP	EAX,	EBX
 	%1	%2
 %endmacro
