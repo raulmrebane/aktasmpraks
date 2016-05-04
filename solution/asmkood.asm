@@ -18,16 +18,16 @@ meie_fun:
 
 	.loop:
 
-	PUSH	DWORD[EBP-4]
 	PUSH	3
+	PUSH	DWORD[EBP-4]
 	CALL	REM
 	
 	PUSH	0
 	CALL	EQUAL
 
 
-	PUSH	DWORD[EBP-4]
 	PUSH	5
+	PUSH	DWORD[EBP-4]
 	CALL	REM
 
 	PUSH	0
@@ -46,8 +46,8 @@ meie_fun:
 
 	.not3and5:
 	
-	PUSH	DWORD[EBP-4]
 	PUSH	3
+	PUSH	DWORD[EBP-4]
 	CALL	REM
 
 	PUSH	0
@@ -60,8 +60,8 @@ meie_fun:
 	
 	.not3:
 	
-	PUSH	DWORD[EBP-4]
 	PUSH	5
+	PUSH	DWORD[EBP-4]
 	CALL	REM
 	
 	PUSH	0
@@ -103,8 +103,8 @@ REM:
 	POP	ECX
 
 	XOR	EDX,	EDX
-	POP	EBX
 	POP	EAX
+	POP	EBX
 	DIV	EBX
 	PUSH	EDX
 
